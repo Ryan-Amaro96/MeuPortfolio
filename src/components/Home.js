@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from '../styles/HomeStyles';
 import InstaIcon from '../assets/pngegg.png'
-import wpp from '../assets/wppIcon.png'
+import me from '../assets/me.jpg'
 import email from '../assets/emailIcon.png'
 import gitH from '../assets/githubIcon.png'
 
@@ -30,7 +30,7 @@ export default function Home() {
           </S.Fig>
         </S.ContainerSocial>
       </S.ContainerAll>
-      <S.Me src={wpp} alt="" />
+      <S.Me src={me} alt="" />
     </S.Section>
   );
 }

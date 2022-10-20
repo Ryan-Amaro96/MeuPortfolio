@@ -25,6 +25,7 @@ margin-top:2%;
 
 export const Moldura = styled.figure`
 width:300px;
+height:400px;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -33,7 +34,23 @@ border-radius:20px;
 margin-bottom:20px;
 `
 
+export const Ancora =styled.a`
+width:90%;
+height:35%;
+margin-top:15px;
+`
+
 export const Project = styled.img`
-width:65%;
-height:50%;
+width:100%;
+`
+
+export const Leg = styled.figcaption`
+text-align:center;
+width:70%;
+`
+
+export const Loading = styled.img`
+width:90%;
+height:35%;
+margin-top:15px;
 `

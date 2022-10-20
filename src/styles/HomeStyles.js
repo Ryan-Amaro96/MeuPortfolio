@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-export const Section= styled.section`
+export const Section = styled.section`
 width:100%;
 background-color:#140f07;
 color:#fffaf2;
@@ -33,13 +33,13 @@ margin-top:18%;
 }
 `
 
-export const Hone= styled.h1`
+export const Hone = styled.h1`
 font-size:28px;
 color:#850b14;
 margin-left:15px;
 `
 
-export const Info =styled.p`
+export const Info = styled.p`
 font-size:25px;
 width:70%;
 margin-left:15px;
@@ -62,6 +62,17 @@ align-items:flex-end;
 flex-wrap:wrap;
 `
 
+export const slideTop = keyframes`
+    0% {
+        -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+`
+
 export const Fig = styled.figure`
 width:32%;
 height:100px;
@@ -71,6 +82,8 @@ align-items:center;
 color:#140f07;
 background-color:#850b14;
 border-radius: 10px 10px 0 0;
+-webkit-animation: ${slideTop} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+animation: ${slideTop} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 `
 
 export const Social = styled.img`
@@ -83,8 +96,11 @@ export const Leg = styled.figcaption`
 
 export const Me = styled.img`
 width:300px;
+border-radius:10px;
+object-fit:cover;
 @media (max-width:1000px){
     margin-top:15px;
 }
 `
+
 
