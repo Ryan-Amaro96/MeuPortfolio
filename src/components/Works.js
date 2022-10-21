@@ -1,8 +1,8 @@
 import React from 'react';
-import Teste from '../assets/teste.png';
 import prjct1 from '../assets/projeto1.jpg';
 import prjct2 from '../assets/projeto2.jpg';
 import prjct3 from '../assets/toDo.jpg';
+import prjct4 from '../assets/projeto4.jpg';
 import Load from '../assets/loading.jpg';
 import * as S from '../styles/WorksStyles.js';
 
@@ -29,7 +29,7 @@ export default function Work() {
           <S.Leg>To do list feita com React.js.</S.Leg>
         </S.Moldura>
         <S.Moldura>
-          <S.Ancora href="" target="_blank"><S.Project src={Teste} alt=""/></S.Ancora>
+          <S.Ancora href="https://github.com/Ryan-Amaro96/ODS" target="_blank"><S.Project src={prjct4} alt=""/></S.Ancora>
           <h3>ODS</h3>
           <S.Leg>Objetivos de desenvolvimento sustentável (ONU) da minha cidade.</S.Leg>
         </S.Moldura>
